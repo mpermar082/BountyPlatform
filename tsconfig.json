@@ -22,7 +22,9 @@
     // Generate declaration files for the compiled code
     "declaration": true,
     // Generate source maps for the compiled code
-    "sourceMap": true
+    "sourceMap": true,
+    // Specify the version of TypeScript being used
+    "lib": ["ES2020"]
   },
   // Specify the directories to include in the compilation
   "include": ["src/**/*"],
