@@ -1,18 +1,31 @@
-{{
-    "compilerOptions": {{
-        "target": "ES2020",
-        "module": "commonjs",
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true
-    }},
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "**/*.test.ts"]
-}}
+{
+  // TypeScript compiler configuration
+  "compilerOptions": {
+    // Target the ES2020 JavaScript standard
+    "target": "ES2020",
+    // Use CommonJS modules
+    "module": "commonjs",
+    // Output compiled files to a separate directory
+    "outDir": "./dist",
+    // Specify the root directory of the source files
+    "rootDir": "./src",
+    // Enable strict type checking
+    "strict": true,
+    // Enable interoperability with CommonJS modules
+    "esModuleInterop": true,
+    // Skip checking of library files
+    "skipLibCheck": true,
+    // Force consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+    // Allow importing JSON files as modules
+    "resolveJsonModule": true,
+    // Generate declaration files for the compiled code
+    "declaration": true,
+    // Generate source maps for the compiled code
+    "sourceMap": true
+  },
+  // Specify the directories to include in the compilation
+  "include": ["src/**/*"],
+  // Specify the directories to exclude from the compilation
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
